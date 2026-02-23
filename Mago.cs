@@ -17,7 +17,7 @@ namespace ProyectoRPG
         {
             if (mana >= 20)
             {
-                Console.WriteLine(nombre + " lanza " + hechizo + "!");
+                Console.WriteLine(Nombre + " lanza " + hechizo + "!");
                 mana -= 20;
                 Console.WriteLine("Mana restante: " + mana);
             }
@@ -31,7 +31,7 @@ namespace ProyectoRPG
         {
             mana += 30;
             if (mana > 100) mana = 100;
-            Console.WriteLine(nombre + " medita y recupera mana. Mana actual: " + mana);
+            Console.WriteLine(Nombre + " medita y recupera mana. Mana actual: " + mana);
         }
     }
 }

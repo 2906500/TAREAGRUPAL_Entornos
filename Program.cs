@@ -9,21 +9,21 @@ namespace ProyectoRPG
             Console.WriteLine("=== BIENVENIDO AL REINO DE LOS HÉROES ===\n");
 
             Personaje pers = new Personaje();
-            pers.nombre = "Héroe Genérico";
-            Console.WriteLine("Se ha creado un personaje: " + pers.nombre);
+            pers.Nombre = "Héroe Genérico";
+            Console.WriteLine("Se ha creado un personaje: " + pers.Nombre);
             pers.Atacar();
             pers.SubirNivel();
 
             Console.WriteLine("\n--- Guerrero ---");
             Guerrero guer = new Guerrero();
-            guer.nombre = "Guerrero Valiente";
+            guer.Nombre = "Guerrero Valiente";
             guer.Atacar();
             guer.AtaquePoderoso();
             guer.DefenderseConEscudo();
 
             Console.WriteLine("\n--- Berserker ---");
             Berserker bers = new Berserker();
-            bers.nombre = "Destructor";
+            bers.Nombre = "Destructor";
             bers.EntrarEnFuria();
             bers.EntrarEnFuria();
             bers.AtaqueFurioso();
@@ -31,7 +31,7 @@ namespace ProyectoRPG
 
             Console.WriteLine("\n--- Mago ---");
             Mago magi = new Mago();
-            magi.nombre = "Merlín";
+            magi.Nombre = "Merlín";
             magi.LanzarHechizo();
             magi.LanzarHechizo();
             magi.Meditar();
@@ -39,7 +39,7 @@ namespace ProyectoRPG
 
             Console.WriteLine("\n--- Nigromante ---");
             Nigromante nigro = new Nigromante();
-            nigro.nombre = "Señor Oscuro";
+            nigro.Nombre = "Señor Oscuro";
             nigro.CapturarAlma();
             nigro.CapturarAlma();
             nigro.InvocarNoMuerto();
