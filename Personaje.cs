@@ -14,6 +14,13 @@ namespace ProyectoRPG
             this.nivel = 1;
         }
 
+        public Personaje(string nombre)
+        {
+            this.nombre = nombre;
+            this.vida = 100;
+            this.nivel = 1;
+        }
+
         public string Nombre
         {
             get => nombre;

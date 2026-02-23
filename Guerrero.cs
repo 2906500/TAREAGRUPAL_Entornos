@@ -13,6 +13,13 @@ namespace ProyectoRPG
             this.arma = "Espada";
         }
 
+        public Guerrero(string nombre):base(nombre)
+        {
+            //this.nombre = nombre;
+            this.fuerza = 15;
+            this.arma = "Espada";
+        }
+
         public void AtaquePoderoso()
         {
             Console.WriteLine(Nombre + " usa su " + arma + " para realizar un ataque poderoso!");
