@@ -2,13 +2,17 @@ using System;
 
 namespace ProyectoRPG
 {
+    /// <summary>
+    ///  clase se encarga de gestionar la clase del mago que viene heredada de personaje
+    /// </summary>
     public class Mago : Personaje
     {
         //public int mana;
+        private int mana;
         public int Mana
         {
-            get;
-            set;
+            get => mana;
+            set => mana = value;
         }
         
 
@@ -32,7 +36,7 @@ namespace ProyectoRPG
         {
             if (Mana >= 20)
             {
-                Console.WriteLine(nombre + " lanza " + hechizo + "!");
+                Console.WriteLine(Nombre + " lanza " + hechizo + "!");
                 Mana -= 20;
                 Console.WriteLine("Mana restante: " + Mana);
             }
@@ -46,7 +50,7 @@ namespace ProyectoRPG
         {
             Mana += 30;
             if (Mana > 100) Mana = 100;
-            Console.WriteLine(nombre + " medita y recupera mana. Mana actual: " + Mana);
+            Console.WriteLine(Nombre + " medita y recupera mana. Mana actual: " + Mana);
         }
     }
 }
