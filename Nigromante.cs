@@ -17,7 +17,7 @@ namespace ProyectoRPG
         {
             if (Mana >= 40 && almasCapturadas >= 1)
             {
-                Console.WriteLine(nombre + " invoca un no-muerto usando un alma capturada!");
+                Console.WriteLine(Nombre + " invoca un no-muerto usando un alma capturada!");
                 Mana -= 40;
                 almasCapturadas--;
                 Console.WriteLine("Almas restantes: " + almasCapturadas);
@@ -31,14 +31,14 @@ namespace ProyectoRPG
         public void CapturarAlma()
         {
             almasCapturadas++;
-            Console.WriteLine(nombre + " ha capturado un alma. Total: " + almasCapturadas);
+            Console.WriteLine(Nombre + " ha capturado un alma. Total: " + almasCapturadas);
         }
 
         public void DrenarVida()
         {
             if (Mana >= 25)
             {
-                Console.WriteLine(nombre + " drena la vida de su enemigo!");
+                Console.WriteLine(Nombre + " drena la vida de su enemigo!");
                 Mana -= 25;
                 vida += 15;
                 Console.WriteLine("Vida recuperada. Vida actual: " + vida);

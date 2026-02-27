@@ -1,8 +1,8 @@
 using System;
+using ProyectoRPG;
+namespace CIFPCarlosIII.ED.UT04.Grupo2;
 
-namespace CIFPCarlosIII.ED.UT04.Grupo2
 
-{
     class Program
     {
         static void Main(string[] args)
@@ -10,21 +10,21 @@ namespace CIFPCarlosIII.ED.UT04.Grupo2
             Console.WriteLine("=== BIENVENIDO AL REINO DE LOS HÉROES ===\n");
 
             Personaje personaje = new Personaje();
-            personaje.nombre = "Héroe Genérico";
-            Console.WriteLine("Se ha creado un personaje: " + personaje.nombre);
+            personaje.Nombre = "Héroe Genérico";
+            Console.WriteLine("Se ha creado un personaje: " + personaje.Nombre);
             personaje.Atacar();
             personaje.SubirNivel();
 
             Console.WriteLine("\n--- Guerrero ---");
             Guerrero guerrero = new Guerrero();
-            guerrero.nombre = "Guerrero Valiente";
+            guerrero.Nombre = "Guerrero Valiente";
             guerrero.Atacar();
             guerrero.AtaquePoderoso();
             guerrero.DefenderseConEscudo();
 
             Console.WriteLine("\n--- Berserker ---");
             Berserker bers = new Berserker();
-            bers.nombre = "Destructor";
+            bers.Nombre = "Destructor";
             bers.EntrarEnFuria();
             bers.EntrarEnFuria();
             bers.AtaqueFurioso();
@@ -32,7 +32,7 @@ namespace CIFPCarlosIII.ED.UT04.Grupo2
 
             Console.WriteLine("\n--- Mago ---");
             Mago magi = new Mago();
-            magi.nombre = "Merlín";
+            magi.Nombre = "Merlín";
             magi.LanzarHechizo();
             magi.LanzarHechizo();
             magi.Meditar();
@@ -40,7 +40,7 @@ namespace CIFPCarlosIII.ED.UT04.Grupo2
 
             Console.WriteLine("\n--- Nigromante ---");
             Nigromante nigro = new Nigromante();
-            nigro.nombre = "Señor Oscuro";
+            nigro.Nombre = "Señor Oscuro";
             nigro.CapturarAlma();
             nigro.CapturarAlma();
             nigro.InvocarNoMuerto();
@@ -50,4 +50,4 @@ namespace CIFPCarlosIII.ED.UT04.Grupo2
             Console.ReadLine();
         }
     }
-}
+

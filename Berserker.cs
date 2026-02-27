@@ -16,14 +16,14 @@ namespace ProyectoRPG
         public void EntrarEnFuria()
         {
             furia += 30;
-            Console.WriteLine(nombre + " entra en estado de furia! Furia actual: " + furia);
+            Console.WriteLine(Nombre + " entra en estado de furia! Furia actual: " + furia);
         }
 
         public void AtaqueFurioso()
         {
             if (furia >= 50)
             {
-                Console.WriteLine(nombre + " desata un ataque furioso devastador!");
+                Console.WriteLine(Nombre + " desata un ataque furioso devastador!");
                 Console.WriteLine("Daño masivo: " + (fuerza * 3 + furia));
                 furia = 0;
             }
@@ -36,7 +36,7 @@ namespace ProyectoRPG
         public string MostrarInfo()
         {
             return "=== INFORMACIÓN DEL PERSONAJE ===" +
-                   "\nNombre: " + nombre +
+                   "\nNombre: " + Nombre +
                    "\nClase: " + this.GetType().Name +
                    "\nNivel: " + nivel +
                    "\nVida: " + vida +
