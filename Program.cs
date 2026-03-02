@@ -1,7 +1,9 @@
 using System;
 using ProyectoRPG;
 namespace CIFPCarlosIII.ED.UT04.Grupo2;
-
+/// <summary>
+/// Programa Principal del RPG con cada personaje y sus estadisticas. Mediante mas avance el program cs mostraran mas personajes que la mayoria heredan de mismo o son subclases de otras.
+/// </summary>
 
     class Program
     {
