@@ -12,6 +12,12 @@ namespace ProyectoRPG
             this.arma = "Hacha de batalla";
             this.fuerza = 20;
         }
+		
+		public Berserker(int nivel)
+		{
+			this.nivel = nivel;
+		}
+		
 
         public void EntrarEnFuria()
         {
@@ -32,6 +38,9 @@ namespace ProyectoRPG
                 Console.WriteLine("Furia insuficiente para realizar ataque furioso.");
             }
         }
+
+		
+
 
         public string MostrarInfo()
         {

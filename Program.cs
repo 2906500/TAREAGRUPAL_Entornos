@@ -22,8 +22,9 @@ namespace ProyectoRPG
             guer.DefenderseConEscudo();
 
             Console.WriteLine("\n--- Berserker ---");
-            Berserker bers = new Berserker();
-            bers.nombre = "Destructor";
+            Berserker bers = new Berserker(5);
+            bers.nombre = "Guts";
+            bers.SubirNivel();
             bers.EntrarEnFuria();
             bers.EntrarEnFuria();
             bers.AtaqueFurioso();
@@ -38,8 +39,9 @@ namespace ProyectoRPG
             magi.LanzarHechizo();
 
             Console.WriteLine("\n--- Nigromante ---");
-            Nigromante nigro = new Nigromante();
-            nigro.nombre = "Señor Oscuro";
+            Nigromante nigro = new Nigromante(4);
+            nigro.nombre = "Señor del lado oscuro";
+            nigro.SubirNivel();
             nigro.CapturarAlma();
             nigro.CapturarAlma();
             nigro.InvocarNoMuerto();

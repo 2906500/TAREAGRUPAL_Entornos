@@ -13,6 +13,11 @@ namespace ProyectoRPG
             this.mana = 120;
         }
 
+        public Nigromante(int nivel)
+        {
+            this.nivel = nivel;
+        }
+
         public void InvocarNoMuerto()
         {
             if (mana >= 40 && almasCapturadas >= 1)
